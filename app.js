@@ -24,7 +24,6 @@ function resLoad(resJSON) {
 		request.onload = function () {
 			if (request.status == 200) {
 				var arrResponse = [];
-				console.log(request.response);
 				arrResponse[0] = request.response;
 				arrResponse[1] = resJSON;
 				resolve(arrResponse);
